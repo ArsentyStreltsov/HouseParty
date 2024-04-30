@@ -51,7 +51,7 @@ body, html {
 
 
 .rules_button_div {
-    background-image: url('button.png'); /* Путь к вашему изображению */
+    background-image: url('images/button.png'); /* Путь к вашему изображению */
     background-size: contain; /* Покрытие всей доступной площади */
     background-position: center; /* Центрирование изображения */
     background-repeat: no-repeat; /* Предотвращение повторения изображения */
@@ -60,9 +60,4 @@ body, html {
     display: flex; /* Используем flexbox для центрирования кнопки */
     justify-content: center; /* Горизонтальное центрирование содержимого */
     align-items: center; /* Вертикальное центрирование содержимого */
-}
-
-
-.your_turn {
-
 }
