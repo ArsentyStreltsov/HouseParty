@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     
     <title>deep house game</title>
 </head>
 <body>
-    <div class="game_screen">
+    <video id="introVideo" src="images/Intro Animation.mp4" autoplay muted></video>
+
+    <div class="game_screen" id="mainContent" style="display:none;">
         <div class="heading_div">
             <img class="heading_img" src="images/heading.png" alt="heading_img">
         </div>
@@ -33,5 +33,8 @@
             </div>
         </div>
     </div>
+    <script src="jsFiles/common.js"></script>
+    <script src="jsFiles/homePage.js"></script>
+
 </body>
 </html>

@@ -7,25 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     
-    <title>card</title>
+    <title>No card</title>
 </head>
 <body>
     <div class="game_screen">
-        <div class="heading_div">
-            <img class="card_img" src="images/card.png" alt="card_img">
-        </div>
-
-        <div class="main_screen_buttons">
-            <h1>here will be card example<br><br></h1>
-                        
-            <div class="rules_button_div">
-                <button class="no_button button" onclick="location.href='game.html'">back</button>
-            </div>
+        <div id="card">
+            <img id="cardImage" src="" alt="Картинка карточки">
+            <p id="cardText"></p>
+            <button onclick="loadNewNoCard()">Следующая карточка</button>
         </div>
     </div>
+    <script src="jsFiles/common.js"></script>
+    <script src="jsFiles/noCards.js"></script>
 </body>
 </html>

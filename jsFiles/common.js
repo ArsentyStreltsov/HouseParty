@@ -6,5 +6,5 @@ function adjustGameScreen() {
 }
 
 // Вызываем функцию при загрузке и изменении размера окна
-window.onload = adjustGameScreen;
 window.onresize = adjustGameScreen;
+window.onload = adjustGameScreen;

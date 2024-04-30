@@ -13,10 +13,18 @@ body, html {
     align-items: center;
 }
 
+#introVideo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .game_screen {
-    height: 100vh; /* 100% высоты видимой части экрана */
+    height: 100vh;
     background-color: #fbe519;
-    display: flex;
+    display: flex !important;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -60,4 +68,12 @@ body, html {
     display: flex; /* Используем flexbox для центрирования кнопки */
     justify-content: center; /* Горизонтальное центрирование содержимого */
     align-items: center; /* Вертикальное центрирование содержимого */
+}
+
+#cardImage {
+    width: 300px;
+}
+
+#cardText {
+    font-family: sans-serif;
 }
