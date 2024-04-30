@@ -8,3 +8,9 @@ function adjustGameScreen() {
 // Вызываем функцию при загрузке и изменении размера окна
 window.onresize = adjustGameScreen;
 window.onload = adjustGameScreen;
+
+
+function goToHomePage() {
+    sessionStorage.clear();  // Очищаем sessionStorage
+    location.href = 'index.html';  // Переход на главную страницу
+}

@@ -21,7 +21,8 @@ body, html {
     left: 0;
 }
 
-.game_screen {
+.game_screen, 
+#card {
     height: 100vh;
     background-color: #fbe519;
     display: flex !important;
@@ -30,9 +31,15 @@ body, html {
     flex-direction: column;
 }
 
+#card {
+    justify-content: center;
+    gap: 30px;
+}
+
 
 .heading_div img,
 .your_turn_div img,
+.card_img img,
 .card_img img {
     width: 300px;
 }
@@ -58,7 +65,7 @@ body, html {
 }
 
 
-.rules_button_div {
+.back_button, .button_div {
     background-image: url('images/button.png'); /* Путь к вашему изображению */
     background-size: contain; /* Покрытие всей доступной площади */
     background-position: center; /* Центрирование изображения */
@@ -70,10 +77,22 @@ body, html {
     align-items: center; /* Вертикальное центрирование содержимого */
 }
 
-#cardImage {
-    width: 300px;
-}
-
 #cardText {
     font-family: sans-serif;
+    width: 85%;
+}
+
+#cardImageText {
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Шрифт с пиксельным стилем */
+    font-size: 16px; /* Размер шрифта */
+
+
+}
+
+.next_card {
+    position: absolute;
+    top: 0px;
+    left: 50%;
 }

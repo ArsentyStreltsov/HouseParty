@@ -14,9 +14,13 @@
 <body>
     <div class="game_screen">
         <div id="card">
-            <img id="cardImage" src="" alt="Картинка карточки">
+            <div class="card_img">
+                <img id="cardImage" src="" alt="Картинка карточки">
+            </div>
             <p id="cardText"></p>
-            <button onclick="loadNewNoCard()">Следующая карточка</button>
+            <div class="back_button">
+                <button class="no_button button" onclick="location.href='game.html'">end turn</button>
+            </div>
         </div>
     </div>
     <script src="jsFiles/common.js"></script>
