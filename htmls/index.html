@@ -8,14 +8,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-    <script src="jsFiles/common.js"></script>
 
-    
     <title>deep house game</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('introVideo');
+            const mainContent = document.getElementById('mainContent');
+
+            // Скрываем видео и контент до окончания загрузки
+            video.style.display = 'none';
+            mainContent.style.display = 'none';
+
+            // После полной загрузки DOM показываем видео
+            video.style.display = 'block';
+
+            // Обработчик события окончания видео
+            video.addEventListener('ended', function () {
+                mainContent.style.display = 'none'; // Показываем контент
+                video.style.display = 'none'; // Скрываем видео
+            });
+        });
+
+        function adjustGameScreen() {
+            var height = window.innerHeight; // Получаем высоту окна
+            var width = (height * 9) / 16; // Рассчитываем ширину с сохранением пропорций 9:16
+            var gameScreen = document.querySelector('.game_screen');
+            gameScreen.style.width = width + 'px'; // Устанавливаем ширину
+        }
+
+        // Вызываем функцию при загрузке и изменении размера окна
+        window.onresize = adjustGameScreen;
+        window.onload = adjustGameScreen;
+
+    </script>
+
 </head>
-<body>
+<body id="body">
     <video id="introVideo" src="images/Intro Animation.mp4" autoplay muted playsinline webkit-playsinline></video>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('introVideo');
+            const mainContent = document.getElementById('mainContent');
+
+            // Скрываем видео и контент до окончания загрузки
+            video.style.display = 'none';
+            mainContent.style.display = 'none';
+
+            // После полной загрузки DOM показываем видео
+            video.style.display = 'block';
+
+            // Обработчик события окончания видео
+            video.addEventListener('ended', function () {
+                mainContent.style.display = 'none'; // Показываем контент
+                video.style.display = 'none'; // Скрываем видео
+            });
+        });
+
+        function adjustGameScreen() {
+            var height = window.innerHeight; // Получаем высоту окна
+            var width = (height * 9) / 16; // Рассчитываем ширину с сохранением пропорций 9:16
+            var gameScreen = document.querySelector('.game_screen');
+            gameScreen.style.width = width + 'px'; // Устанавливаем ширину
+        }
+
+        // Вызываем функцию при загрузке и изменении размера окна
+        window.onresize = adjustGameScreen;
+        window.onload = adjustGameScreen;
+
+    </script> -->
 
     <div class="game_screen" id="mainContent" style="display:none;">
         <div class="heading_div">
@@ -36,7 +98,7 @@
             </div>
         </div>
     </div>
-    <script src="jsFiles/homePage.js"></script>
+    <script src="jsFiles/common.js"></script>
 
 </body>
 </html>
